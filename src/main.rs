@@ -15,4 +15,19 @@ fn main() {
 
   let arr : [i32;5] = [1,2,3,4,5];
   println!("{}",arr[2]);
+
+  if x>y || 1<2{    
+    println!("x is greater than y")
+  }else{
+    println!("dflkjklgjl")
+  }
+
+  for name in arr{
+    println!("{}",name);
+  }
+
+  let name : String = String::from("Hello world");
+  println!("{}",name);
+
+  // println!("{}",name[0]); ->  will give an error because rust doesnt let you access maybe null points
 }
