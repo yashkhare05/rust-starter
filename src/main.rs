@@ -30,4 +30,11 @@ fn main() {
   println!("{}",name);
 
   // println!("{}",name[0]); ->  will give an error because rust doesnt let you access maybe null points
+
+  // also with strings since they are of dynamic size its difficult to manage memory
+
+  let mut s = String::from("hello");
+  s.push_str(" world"); // we use stack+ heap for memory management in rust, we use heap for length of string and we store reference to the heap data in stack
+  // stack for fast allocation and deallocation
+  // heap for dynamic allocation and deallocation
 }
