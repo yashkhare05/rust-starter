@@ -34,7 +34,10 @@ fn main() {
   // also with strings since they are of dynamic size its difficult to manage memory
 
   let mut s = String::from("hello");
-  s.push_str(" world"); // we use stack+ heap for memory management in rust, we use heap for length of string and we store reference to the heap data in stack
+  s.push_str(" world"); // we use stack+ heap for memory management in rust, we use heap for length of string and we store address to the heap data(for xample first [0] element of string) in stack
   // stack for fast allocation and deallocation
   // heap for dynamic allocation and deallocation
+  // also constant string are stored in heap only
+
+  
 }
